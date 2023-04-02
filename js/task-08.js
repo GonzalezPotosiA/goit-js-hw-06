@@ -12,7 +12,8 @@ function handleSubmit(event){
     if(email.value==='' || password.value===''){
         alert("rellenar todos los espacios")
     }
-    console.log(`Login: ${email.value}, Password: ${password.value}`);
+    const data={ email: email.value, password:password.value};
+    console.log("Data: ", data);
     event.currentTarget.reset();
     
 }
